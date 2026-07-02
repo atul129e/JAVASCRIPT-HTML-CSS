@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 227, 218);
+}
+
+.inp{
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+.form{
+    padding: 45px;
+    box-shadow: 2px 0px 20px gray;
+    background-color: rgb(186, 199, 199);
+    border-radius:4px ;
+    color: rgb(59, 53, 53);
+    font-size: large;
+}
+input{
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: 900;
+border: none;
+color: rgb(90, 85, 78);
+border-radius: 999px;
+
+
+}
+#btn{
+    background-color:rgb(157, 169, 144) ;
+    width: 250px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: larger;
+    border-radius: 999px;
+    
+}
+.styl{
+    text-shadow: 0px 0px 5px rgb(200, 170, 170);
+    background-color: rgb(90, 85, 78);
+
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 30px;
+    margin-left: 30px;
+    border:2px solid black ;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 5px 30px 5px 30px;
+}
+.show{
+    height: 40px;
+    width: 250px;
+    border-radius: 999px;
+    bottom: 40px;
+    color: whitesmoke;
+    background-color:rgb(157, 169, 144) ;
+    font-size: larger;
+cursor: pointer;
+margin-top: 20px;
+   
+}
