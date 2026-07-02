@@ -1,7 +1,6 @@
 const container = document.getElementById("container");
 
-// Form Submit
-document.getElementById("btn").addEventListener("click", async (e) => {
+document.getElementById("myForm").addEventListener("submit", async function (e) {
 
     e.preventDefault();
 
@@ -13,15 +12,16 @@ document.getElementById("btn").addEventListener("click", async (e) => {
         dob: document.getElementById("dob").value
     };
 
-    // Local Storage me Save
+    // Local Storage
     localStorage.setItem("userData", JSON.stringify(userData));
 
-    // Google Sheet me Save
     try {
 
-        const response = await fetch("https://script.google.com/macros/s/AKfycbwZPt-ubU79CjciQ8CqlCouz_BFha61Z48GdcnXTb89zqebUXSTpiWwZ8EOY1PD8qm6/exec", {
+        await fetch("https://script.google.com/macros/s/AKfycbxtZvsHBIobZdbRB024sKC4I5etCfQUJL85YO9Iro7VoOGBXuzu9ygm4L0Ue6G6C4Ms/exec", {
 
             method: "POST",
+
+            mode: "no-cors",
 
             headers: {
                 "Content-Type": "text/plain;charset=utf-8"
@@ -31,41 +31,36 @@ document.getElementById("btn").addEventListener("click", async (e) => {
 
         });
 
-        if (response.ok) {
-            alert("Form Submitted Successfully ✅");
-        } else {
-            alert("Data could not be saved.");
-        }
+        alert("Form Submitted Successfully ✅");
 
         document.getElementById("myForm").reset();
 
     } catch (error) {
 
-        console.log(error);
-        alert("Something went wrong!");
+        console.error(error);
+
+        alert("Something went wrong ❌");
 
     }
 
 });
 
-// Show Data
 function display() {
 
     const myform = JSON.parse(localStorage.getItem("userData"));
 
     if (!myform) {
-        alert("No Data Found!");
+        alert("No Data Found");
         return;
     }
 
     container.innerHTML = `
         <div class="product-card">
-            <h3 class="styl">Name: ${myform.name}</h3>
-            <h3 class="styl">Email: ${myform.email}</h3>
-            <h4 class="styl">Phone: ${myform.phone}</h4>
-            <h4 class="styl">Password: ${myform.password}</h4>
-            <h4 class="styl">DOB: ${myform.dob}</h4>
+            <h3 class="styl">Name : ${myform.name}</h3>
+            <h3 class="styl">Email : ${myform.email}</h3>
+            <h3 class="styl">Phone : ${myform.phone}</h3>
+            <h3 class="styl">Password : ${myform.password}</h3>
+            <h3 class="styl">DOB : ${myform.dob}</h3>
         </div>
     `;
-
 }
