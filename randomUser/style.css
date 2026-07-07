@@ -1,0 +1,80 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  
+}
+
+#container{
+  width: 580px;
+  height: 440px;
+  background-color: rgba(104, 132, 132, 0.333);
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 0px 20px rgb(170, 176, 155);
+  border: 2.5px solid rgb(230, 224, 171);
+}
+body{
+  background-image: url('img.pn.avif');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#user-img{
+  
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  border: 2.5px solid rgb(230, 224, 171);
+  box-shadow: 0px 0px 5px rgb(230, 224, 171) ;
+}
+#fetch-btn{
+  height: 35px;
+  width: 80%;
+  border: 1px solid rgba(128, 128, 128, 0.171);
+  background-color: rgb(69, 162, 238);
+  color: white;
+  border-radius: 999px;
+  cursor: pointer;
+}
+#fetch-btn:active{
+  background-color: blue;
+}
+h2{
+  color: antiquewhite;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  margin: 8px 0px;
+  
+  
+}
+h3{
+  font-weight: 999;
+  font-size:30px ;
+  color: rgb(38, 180, 173);
+  text-shadow: 0px 2px 2px;
+  text-align: start;
+  
+}
+h2{
+    text-shadow: 0px 2px 2px;
+
+}
+.wid{
+  display: flex;
+  width: 100%;
+align-items: start;
+justify-content: start;
+}
