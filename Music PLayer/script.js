@@ -8,13 +8,13 @@ const songs = [
     {
         title: "Udi UDi ",
         artist: "Neesh & Sarkar",
-        src: "audio/hello2.mp3",
+        src: "audio/hello1.mp3",
         cover: "abc.jpg"
     },
     {
         title: "Tere liye",
+        src: "audio/hello2.mp3",
         artist: "Atif Aslam & Shreya Ghoshal",
-        src: "audio/hello1.mp3",
         cover: "images.jpg"
     }
 ];
