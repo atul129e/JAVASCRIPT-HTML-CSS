@@ -14,7 +14,7 @@ const songs = [
     {
         title: "Tere liye",
         artist: "Atif Aslam & Shreya Ghoshal",
-        src: "audio/hello4.mp3",
+        src: "audio/hello1.mp3",
         cover: "images.jpg"
     }
 ];
